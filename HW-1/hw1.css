@@ -1,0 +1,41 @@
+h1{
+    color:white;
+}
+p1{
+    color:white;
+    font-size: 200%;
+}
+a{
+    color:white;
+}
+p2{
+    color:white;
+    font-size: 200%;
+}
+n1{
+    color:white;
+}
+n2{
+    color:white;
+}
+n3{
+    color:white;
+}
+n4{
+    color:white;
+}
+n5{
+    color:white;
+}
+p4{
+    color:white;
+}
+p3{
+    font-size: 200%;
+    color:yellow;
+}
+table,n1,n2,n3,n4,n5{
+    border:1px solid white;
+    font-size: 300%;
+    width: 300%;
+}
