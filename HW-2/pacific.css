@@ -1,0 +1,111 @@
+/*
+File: pacific.css
+GUI Assignment: Styling my first webpage
+In this assingment I used CSS styling to format a html site to specific conditions. 
+My largest issue came with the background. I attempted to use a gradient for the background and dicussed with 
+my peers their approach and realized I was using bad format. Besides that part just doing the general padding
+to get the format took the longest amount of time
+Stephen Little, UMass Lowell Computer Science, stephen_little@student.uml.edu
+Copyright (c) 2021 by Stephen. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SL on Sept 30, 2021 at 9:23 PM
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/*Set background to image and then set bottom portion to the lower section*/
+body {
+	background-image: url("ptrbackground.jpg");
+	background-color:  #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*Set the sunset image and the black bar, fixed to the right*/
+header{
+	background-image: url("sunset.jpg");
+	background-position:right;
+	background-repeat:no-repeat;
+ 	background-color: black;
+}
+/*Get space for the list and use float for positing, also width for the format*/
+nav{
+	background-color:#86cdf3;
+	width:240px;
+	float: left;
+}
+/*Remove the style and set in the center*/
+nav ul {
+	font-size: 1.2em;
+	list-style:none;
+	padding: 25px;
+	text-align: center;
+}
+/*
+Remove decoration and set color*/
+nav ul li a{
+	text-decoration:none;
+	color:black;
+	padding-top: 10px;
+}
+/*Change color with mouse*/
+nav a:hover {
+	color: #FFFFFF;
+}
+/*Margin bottom friend helped with to help with formatting*/
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color:white;
+}
+/*set background color*/
+h2 {
+	color: #86cdf3;
+}
+/*set font*/
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+/*float and margin help with positon*/
+img{
+	float:left;
+	margin-right:30px;
+}
+/**/
+#contact {
+	font-size: 90%;
+}
+/**/
+dt {
+	color: #000033;
+}
+/*margin and padding used to set in right position*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color:white;
+	margin-left: 250px;
+	padding: 30px;
+	font-style:italic;
+}
+/*USed w3schools to find the margin auto to help with the formatting*/
+#wrapper{
+	min-width:600px;
+	width:80%;
+	margin: 0px auto;
+	background-color:#86cdf3;
+}
+/*Friend helped with getting the 2 variables in the padding*/
+#content{
+	background-color:white;
+	margin-left: 250px;
+	padding: 15px 30px;
+}
+/*CHange the dots in a list to gif*/
+#content ul{
+	list-style-image: url("marker.gif");
+}
+/*CHange resort to bold and color*/
+.resort{
+	color: #86cdf3;
+	font-weight:bold;
+}
