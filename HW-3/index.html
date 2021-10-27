@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: JS table
+For this program I use javasciprt to make a table, I also looked at HW4 and found out some jequert 
+resoucres which allowed for me to make the table work with less code than if I used Boostrap
+
+Stephen Little, UMass Lowell Computer Science, stephen_little@student.uml.edu
+Copyright (c) 2021 by Stephen. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SL on Oct 26th, 2021 at 9:23 PM
+-->
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <!--
+    check
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JS Dynamic Table Website</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+        <div class="Body">
+          <!--
+        https://stackoverflow.com/questions/35037069/what-is-the-meaning-of-onsubmit-return-false-javascript-jquery
+        Was haing issues with the data disappearing as soon as updated but found this question which solved it
+        -->
+          <form onsubmit="return false">
+            <label>Min Row Mult: </label><input type="number" class="form-control" id="horStart" value="0"><br>
+            <label>Max Row Mult: </label><input type="number" class="form-control" id="horEnd" value="10"><br>
+            <label>Min Column Mult: </label><input type="number" class="form-control" id="verStart" value="0"><br>
+            <label>Max Column Mult: </label> <input type="number" class="form-control" id="verEnd" value="10"><br>
+            <input type="submit" value="Submit" onclick="return table()">
+          </form>
+    <div id="multTable"></div>
+  </div>          
+ <!--
+   I looked at HW4 and found that I can use jquery for css styling instead of using bootstrap. I figure since
+   I will be using Jquesry for the next assingment I should do my styling with it too.
+  -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type='text/javascript' src="table.js"></script>
+</body>
+</html>
