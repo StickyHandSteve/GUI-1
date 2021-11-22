@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  File: index.html
+GUI Assignment: HW4 Dynamic Jquery Table with sliders
+I was able to get a table made that works with sliders but I was never able to get my save tab function working,
+The closest I was able to get was simply to create a tab but I wasnt able to get the tabs to save the data from the table
+because of this issue  I was not able to really complete part 2. I did expand the validator for my website though with the design I used for my 
+sliders it is impossible for the user to enter data that is out of range
+Stephen Little, UMass Lowell Computer Science, stephen_little@student.uml.edu
+Copyright (c) 2021 by Stephen. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SL on November 22nd, 2021 at 11:23 AM
+  -->
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>GUI-1 HW4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <!--
+  I searched around for a few of these inorder to get the right ones to enable jquery and its slider
+  my friend sent my a few aswell so im not sure if any are redundant
+  -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src=http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js></script>
+  <script src=http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js></script>
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type='text/javascript' src="table.js"></script>
+      <!--
+  Modified HW3 to work with forms
+  -->
+          <form id="data_form" name="data_form">
+            <div>
+              <label>Min Row Mult:  </label><input type="number" id="startX" name="startX" value="0" required><div id="sliderstartX"></div>
+            </div>
+            <div>
+              <label>Max Row Mult: </label><input type="number" id="endX" name="endX" value="0" required><div id="sliderendX"></div>
+            </div>
+            <div>
+              <label>Min Column Mult: </label> <input type="number" id="startY" name="startY" value="0" required><div id="sliderstartY"></div>
+            </div>
+            <div>
+              <label>Max Column Mult: </label><input type="number" id="endY" name="endY" value="0" required><div id="sliderendY"></div>
+            </div>
+          </form>
+      </div>
+      <!--
+  tabl where JS will be inserting table
+  -->
+      <div id="table"></div>
+    <!--
+  Load in linker to js and scripts at bottom
+  -->
+    <script>
+      $("#linker").load("html/navbar.html");
+      validate(); 
+      slider();          
+    </script>
+  </div>          
+</body>
+</html>

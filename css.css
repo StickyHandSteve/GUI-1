@@ -1,0 +1,26 @@
+/*Set the black and yellow theme for our tables*/
+tbody > tr > td {
+  background-color: yellow;               
+  border: 5px solid black;
+  color: black;
+  height: 5px;
+  width: 5px;
+}
+body{
+  background-image: url("cool-background.png");
+}
+/*Set first x and y to black color*/
+tbody > tr:first-child > td {
+  background-color: black;
+  color: white;
+}
+tbody > tr > td:first-child {
+  background-color: black;
+  color: white;
+}
+/*W3Schools helped me with the styling the sliders*/
+.ui-slider-horizontal .ui-slider-handle {
+  background: yellow;             
+}
+
+
