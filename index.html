@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+  File: index.html
+GUI Assignment: HW5 Scrabble Game using JS
+I was able to succesfully generate my scrabble board but I ran into issues when it game to trying to calculate the score
+of the game. I think I took the wrong approach to my problem because I was not able to figure out how to get hte tiles
+placed in the correct place. I think I could have a js script on the board image that would lock the tile into place
+if I hoved over it with a tile in hand. After this I would be able to make calcs to find the score. I also
+have a bug whenever I hit generate board a new one is created undearneath my currnent tiles
+
+Stephen Little, UMass Lowell Computer Science, stephen_little@student.uml.edu
+Copyright (c) 2021 by Stephen. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SL on December 14nd, 2021 at 11:23 AM
+  -->
+  <html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+   <title>GUI-1 HW5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+</head>
+<body>
+       <main>
+               <div id="gameboard"></div>
+              <br>
+              <div id="tileHolder"></div>
+              <br>        
+               <button id="genButton" onclick="gameRunner()">Generate Board</button>          
+      </main>
+ </body>
+</html>
